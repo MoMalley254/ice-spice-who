@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- EMOJI FAVICON -->
+    <link rel="icon" href="https://media.tenor.com/OQu20Puq8SYAAAAC/cool-cool-emoji.gif">
+    <!-- EMOJI FAVICON -->
+    
+    <title>Ice Spice who???</title>
+
+    <style>
+    ::-webkit-scrollbar {
+        width: 15px; /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: orange; /* Background color of the scrollbar track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: red; /* Color of the scrollbar thumb */
+        border-radius: 5px; /* Rounded corners for the thumb */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: purple; /* Color of the scrollbar thumb on hover */
+      }
+      body {
+        background: url(./monke-monkey.gif);
+        background-position: center;
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body id="htmlBody">
+    <div>
+      <h1>Boy's a liar</h1>
+        <h3>by PinkPantheress</h3>
+<p>Take a look inside your heart, is there any room for me? (Any room for me)</p>
+<p>I would have to hold my breath 'til you get down on one knee (down on one knee)</p>
+<p>Because you only want to hold me when I'm looking good enough (looking good enough)</p>
+<p>Did you ever feel me? Would you ever picture us? (Ever picture us)</p>
+<p>Every time I pull my hair, well, it's only out of fear</p>
+<p>That you'll find me ugly and one day we'll disappear</p>
+<p>Because what's the point of crying? It was never even love (never even love)</p>
+<p>Did you ever want me? Was I ever good enough? (Ever good enough)</p>
+<p>Th-the boy's a liar</p>
+<p>The boy's a liar</p>
+<p>He doesn't see ya</p>
+<p>You're not looking at me, boy</p>
+<p>The boy's a liar</p>
+<p>The boy's a liar</p>
+<p>He doesn't see ya</p>
+<p>You're not looking at me, boy</p>
+<p>Good enough, 'ough-ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Baby, please?</p>
+<p>I just wanted to look nice for you</p>
+<p>Come stay with me, oh</p>
+<p>You're not around, so what should I do?</p>
+<p>I thought you liked those</p>
+<p>Look about a girl just like me (like me)</p>
+<p>Baby, please?</p>
+<p>I know you want to change me</p>
+<p>Can you take a look inside your heart, is there any room for me?</p>
+<p>I would have to hold my breath 'til you get down on one knee</p>
+<p>Because what's the point of crying? It was never even love (never even love)</p>
+<p>Did you ever want me? Was I ever good enough?</p>
+<p>Th-the boy's a liar</p>
+<p>The boy's a liar</p>
+<p>He doesn't see ya</p>
+<p>You're not looking at me, boy</p>
+<p>The boy's a liar</p>
+<p>The boy's a liar</p>
+<p>He doesn't see ya</p>
+<p>You're not looking at me, boy</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+<p>Good enough, 'ough-'ough</p>
+    </div>
+    <h4>By <a href="https://www.instagram.com/momalley254/">momalley254</a></h4>
+    
+
+    <!-- PLACEHOLDER TEXT -->
+          
+
+    <script>
+      const htmlPage = document.getElementById('htmlBody');
+      const form = document.getElementById('form');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputImage = document.getElementById('inputImage').files[0];
+        const reader = new FileReader(); // Initialize file reader to access local storage
+        reader.onload = function(e) {
+          const cursorImage = new Image();
+          cursorImage.src = e.target.result; // Set image preview
+          htmlPage.style.backgroundImage = `url(${cursorImage.src})`;
+          htmlPage.style.cursor = `url(${cursorImage.src}), auto`;
+        }
+        reader.readAsDataURL(inputImage);
+      });
+    </script>
+
+
+  </body>
+</html>
